@@ -209,6 +209,7 @@ Write-Header "Step 4: Installing Applications via Chocolatey"
 # If FFmpeg via Winget gives you trouble, add "ffmpeg" to this list as a fallback.
 $chocoApps = @(
     "filezilla"
+    "strawberrymusicplayer"
 )
 
 foreach ($pkg in $chocoApps) {
