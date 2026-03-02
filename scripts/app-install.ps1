@@ -186,6 +186,7 @@ $wingetApps = [ordered]@{
     "VLC"             = "VideoLAN.VLC"
     "Bitwarden"       = "Bitwarden.Bitwarden"
     "7-Zip"           = "7zip.7zip"
+    "FontBase"        = "Levitsky.FontBase"
     "Git"             = "Git.Git"
     "Node.js LTS"     = "OpenJS.NodeJS.LTS"
     "PowerShell Core" = "Microsoft.PowerShell"
