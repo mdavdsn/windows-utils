@@ -89,6 +89,28 @@ if ($confirm -notmatch "^[Yy]$") {
 }
 
 # ---------------------------------------------------------------------------
+# Step 2 — Figma Desktop
+# ---------------------------------------------------------------------------
+
+Write-Header "Step 2: Figma Desktop"
+
+Write-Step "Installing Figma Desktop via Winget..."
+
+$confirm = Read-Host "Ready to install Figma Desktop. Proceed? (Y/N)"
+if ($confirm -notmatch "^[Yy]$") {
+    Write-Host "Skipped Figma Desktop." -ForegroundColor DarkGray
+} else {
+    winget install --id Figma.Figma --source winget --silent --accept-package-agreements --accept-source-agreements
+
+    if ($LASTEXITCODE -eq 0 -or $LASTEXITCODE -eq -1978335189) {
+        Write-OK Figma Desktop installed. Sign in with your Figma account on first launch."
+    } else {
+        Write-Fail "Figma Desktop install returned exit code $LASTEXITCODE."
+        Write-Host "You can install it manually from: https://www.figma.com/downloads/" -ForegroundColor DarkGray
+    }
+}
+
+# ---------------------------------------------------------------------------
 # Step 2 — Office Deployment Tool
 # ---------------------------------------------------------------------------
 
