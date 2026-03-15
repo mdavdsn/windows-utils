@@ -25,7 +25,7 @@ The following instructions are to create an installation disk that has the local
 
 1. Download the Windwos 11 ISO file.
 2. Insert a USB flash drive to use as the installation media.
-3. Use Rufus and elect the USB drive to write and the ISO file that was downloaded.
+3. Use Rufus and select the USB drive to write and the ISO file that was downloaded.
 4. Click start. A dialog box appears with a few options.
 5. Toggle "Remove requirement for an online Microsoft account" to `On` and click OK. There are other options that can be toggled to tweak the installation.
 6. Click OK to destroy data on the USB drive and the drive will be written.
